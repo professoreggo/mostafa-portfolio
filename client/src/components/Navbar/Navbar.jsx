@@ -17,12 +17,10 @@ function Navbar() {
   useEffect(() => {
     function handleScroll() {
       setScrolled(window.scrollY > 20)
-
       if (menuOpen) {
         setMenuOpen(false)
       }
     }
-
     window.addEventListener('scroll', handleScroll)
 
     // Cleanup — remove the listener when Navbar unmounts
