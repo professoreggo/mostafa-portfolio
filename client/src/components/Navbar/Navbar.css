@@ -1,0 +1,112 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  display: flex; /*makes children align horizontaly*/
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background: #ffffff;
+  border-bottom: 1px solid transparent;
+  z-index: 1000;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar--scrolled {
+  border-color: #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Brand */
+.navbar__brand {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+  text-decoration: none;
+  letter-spacing: -0.3px;
+}
+
+/* Desktop nav links */
+.navbar__links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar__links a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #4b5563;
+  transition: color 0.2s;
+}
+
+.navbar__links a:hover {
+  color: #111827;
+}
+
+/* Hamburger — hidden on desktop */
+.navbar__hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.hamburger-icon,
+.hamburger-icon::before,
+.hamburger-icon::after {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #111827;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+  position: relative;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.hamburger-icon::before { top: -7px; }
+.hamburger-icon::after  { top:  7px; }
+
+/* Animate hamburger → X */
+.hamburger-icon--open               { background: transparent; }
+.hamburger-icon--open::before       { transform: rotate(45deg)  translateY(7px); }
+.hamburger-icon--open::after        { transform: rotate(-45deg) translateY(-7px); }
+
+/* Mobile menu — hidden on desktop */
+.navbar__mobile-menu {
+  display: none;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  list-style: none;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar__mobile-menu a {
+  display: block;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .navbar__links       { display: none; }
+  .navbar__hamburger   { display: block; }
+  .navbar__mobile-menu { display: block; }
+}   
