@@ -1,11 +1,9 @@
 .experience-item {
-  padding: 1.75rem;
+  display: flex;               /* side by side: content | image */
   border-radius: 12px;
   border: 1px solid #e5e7eb;
   background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  overflow: hidden;            /* image respects the border radius */
   transition: box-shadow 0.2s, transform 0.2s;
 }
 
@@ -14,12 +12,49 @@
   transform: translateY(-2px);
 }
 
+/* ── Left side ── */
+.experience-item__body {
+  flex: 1;                     /* takes all available width */
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .experience-item__header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.experience-item__logo-wrapper {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.experience-item:hover .experience-item__logo-wrapper {
+  transform: scale(1.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item__logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.experience-item__info {
+  flex: 1;
 }
 
 .experience-item__role {
@@ -39,7 +74,7 @@
   font-size: 0.8rem;
   color: #6b7280;
   white-space: nowrap;
-  padding-top: 2px;
+  margin-left: auto;
 }
 
 .experience-item__bullets {
@@ -53,4 +88,30 @@
   font-size: 0.9rem;
   color: #4b5563;
   line-height: 1.6;
+}
+
+/* ── Right side — image ── */
+.experience-item__image-wrapper {
+  width: 200px;
+  flex-shrink: 0;              /* never squishes */
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-item__image {
+  position: absolute;
+  inset: 0;                    /* fills the wrapper exactly */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* crops to fit, never stretches */
+  transition: transform 0.4s ease;
+}
+
+.experience-item:hover .experience-item__image {
+  transform: scale(1.05);      /* subtle zoom on card hover */
+}
+
+/* Hide image on mobile — not enough horizontal space */
+@media (max-width: 640px) {
+  .experience-item__image-wrapper { display: none; }
 }
