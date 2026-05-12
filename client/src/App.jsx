@@ -6,7 +6,6 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import data from "./data/portfolio.json";
 
-
 function App() {
   return (
     <div>
@@ -15,11 +14,12 @@ function App() {
         name={data.personal.name}
         title={data.personal.title}
         summary={data.personal.summary}
+        skills={data.skills.map(s => s.name)}
       />
-      <Skills skills={data.skills} />
       <Experience experience={data.experience} />
-      <Projects projects={data.projects}/>
-      <Contact email={data.personal.email}/>
+      <Projects projects={data.projects} />
+      <Skills skills={data.skills} />
+      <Contact email={data.personal.email} />
     </div>
   );
 }
