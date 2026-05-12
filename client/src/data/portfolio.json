@@ -15,8 +15,8 @@
       "company": "Eventum Solutions",
       "role": "Software Development Intern",
       "period": "07/2025 – 09/2025",
-      "logo": "/src/assets/logos/eventum-logo.jpg",
-      "image": "/src/assets/logos/eventum.png",
+      "logo": "/assets/logos/eventum-logo.jpg",
+      "image": "/assets/logos/eventum.png",
 
       "bullets": [
         "Developed core frontend features using React, Tailwind CSS, AntD and built RESTful APIs with Java Spring Boot integrated with PostgreSQL in a Dockerized environment for an Engineer Onboarding System.",
@@ -28,8 +28,8 @@
       "company": "El Sewedy Electric",
       "role": "Application Development Intern",
       "period": "07/2024 – 08/2024",
-      "logo": "/src/assets/logos/elsewedy-logo.jpg",
-      "image": "/src/assets/logos/elsewedy.png",
+      "logo": "/assets/logos/elsewedy-logo.jpg",
+      "image": "/assets/logos/elsewedy.png",
 
 
       "bullets": [
@@ -42,8 +42,8 @@
       "company": "Link-TSP",
       "role": "Application Development Intern",
       "period": "07/2023 – 09/2023",
-      "logo": "/src/assets/logos/linktsp.png",
-      "image": "/src/assets/logos/linktsp.png",
+      "logo": "/assets/logos/linktsp.png",
+      "image": "/assets/logos/linktsp.png",
 
       "bullets": [
         "Developed a CMS back-end using .NET Core and built Microservices for event logging and automated tasks.",

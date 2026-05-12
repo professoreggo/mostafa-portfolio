@@ -32,7 +32,8 @@ function Navbar() {
       {/* Brand */}
       <a href="#about">
         <img
-          src="../public/mt-logo.png"
+          src="../public
+          /mt-logo.png"
           alt="Mostafa Tarek Logo"
           className="navbar__logo"
         />
