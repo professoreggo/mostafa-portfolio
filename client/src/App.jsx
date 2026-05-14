@@ -18,7 +18,7 @@ function App() {
         skills={data.skills.map(s => s.name)}
       />
       <Experience experience={data.experience} />
-      <Projects projects={data.projects} />
+      {/* <Projects projects={data.projects} /> */}
       <Achievements achievements={data.achievements} />
       <Skills skills={data.skills} />
       <Contact email={data.personal.email} />

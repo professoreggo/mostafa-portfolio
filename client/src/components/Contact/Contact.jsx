@@ -87,7 +87,7 @@ function Contact({ email }) {
                 name="name"
                 type="text"
                 className="form__input"
-                placeholder="Mostafa Tarek"
+                placeholder="Your Name"
                 value={form.name}
                 onChange={handleChange}
               />
@@ -100,7 +100,7 @@ function Contact({ email }) {
                 name="email"
                 type="email"
                 className="form__input"
-                placeholder="mostafa@example.com"
+                placeholder="Your Email address"
                 value={form.email}
                 onChange={handleChange}
               />
@@ -112,7 +112,7 @@ function Contact({ email }) {
                 id="message"
                 name="message"
                 className="form__input form__textarea"
-                placeholder="Tell me about your project..."
+                placeholder="Message"
                 rows={5}
                 value={form.message}
                 onChange={handleChange}

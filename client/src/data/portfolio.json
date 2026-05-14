@@ -20,7 +20,7 @@
 
       "bullets": [
         "Developed core frontend features using React, Tailwind CSS, AntD and built RESTful APIs with Java Spring Boot integrated with PostgreSQL in a Dockerized environment for an Engineer Onboarding System.",
-        "Delivered user stories on schedule within an Agile team, acting as Scrum Master for a team of 7 — leading sprint planning and daily stand-ups."
+        "Delivered user stories on schedule within an Agile team, acting as Scrum Master for a team of 7 leading sprint planning and daily stand-ups."
       ]
     },
     {
@@ -58,6 +58,7 @@
     { "id": 4, "name": "ASP.NET Core", "category": "backend"  },
     { "id": 5, "name": "Python",       "category": "backend"  },
     { "id": 6, "name": "Microservices","category": "backend"  },
+    { "id": 6, "name": "Bootstrap","category": "backend"  },
     { "id": 7, "name": "REST APIs",    "category": "backend"  },
     { "id": 8, "name": "React",        "category": "frontend" },
     { "id": 9, "name": "JavaScript",   "category": "frontend" },
@@ -99,9 +100,9 @@
     
   ],
   "achievements": [
-    { "id": 1, "place": "3rd", "title": "WRC @Home Service Robot Challenge", "location": "China", "year": 2024 ,"image": "/assets/images/wrc.jpg" , "description": "Achieved 3rd place in an international robotics competition focused on autonomous service robots."},
-    { "id": 2, "place": "2nd", "title": "RoboCup European Super Teams",       "location": "Croatia", "year": 2023 ,"image": "/assets/images/rcj.png" , "description": "Secured 2nd place in the Super Teams category; also awarded Best Technical Description Paper."},
-    { "id": 3, "place": "2nd", "title": "IEEE Solve the 17 Hackathon",        "location": "Egypt", "year": 2025 ,"image": "/assets/images/ieee.jpeg" , "description": "Developed a web application using Next.js to help illiterate individuals learn Arabic letters and words through a simple user interface and voice commands, contributing to the United Nations’ 17 Sustainable Development Goals (SDGs) initiative and earning 2nd place."}
+    { "id": 1, "place": "2nd", "title": "IEEE Solve the 17 Hackathon",        "location": "Egypt", "year": 2025 ,"image": "/assets/images/ieee.jpeg" , "description": "Developed a web application using Next.js to help illiterate individuals learn Arabic letters and words through a simple user interface and voice commands, contributing to the United Nations’ 17 Sustainable Development Goals (SDGs) initiative and earning 2nd place."},
+    { "id": 2, "place": "3rd", "title": "WRC @Home Service Robot Challenge", "location": "China", "year": 2024 ,"image": "/assets/images/wrc.jpg" , "description": "Achieved 3rd place in an international robotics competition focused on autonomous service robots."},
+    { "id": 3, "place": "2nd", "title": "RoboCup European Super Teams",       "location": "Croatia", "year": 2023 ,"image": "/assets/images/rcj.png" , "description": "Secured 2nd place in the Super Teams category; also awarded Best Technical Description Paper."}
   ],
   "courses & certifications": [
     "Oracle Cloud Infrastructure Foundations",
