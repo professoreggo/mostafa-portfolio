@@ -33,7 +33,7 @@ Personal portfolio website built with React and Vite.
 git clone https://github.com/professoreggo/mostafa-portfolio.git
 cd mostafa-portfolio/client
 
-edit data.json in data dir to match your profile
+#Edit data.json in data dir to match your profile
 
 # Install dependencies
 npm install
