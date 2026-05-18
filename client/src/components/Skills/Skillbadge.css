@@ -1,18 +1,50 @@
 .skill-badge {
-  display: inline-block;
-  padding: 0.4rem 1rem;
-  border-radius: 99px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
   font-size: 0.85rem;
-  font-weight: 500;
-  transition: transform var(--transition-base);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(6px);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.skill-badge:hover {
-  transform: translateY(-2px);
+/* Backend */
+.skill-badge--backend {
+  background: rgba(255, 255, 255, 0.15);
+  color: #c7d2fe;
+  border-color: rgba(129, 140, 248, 0.35);
 }
 
-.skill-badge--frontend { background: var(--color-badge-frontend-bg, #dbeafe); color: var(--color-badge-frontend-text, #1d4ed8); }
-.skill-badge--database { background: var(--color-badge-database-bg, #dcfce7); color: var(--color-badge-database-text, #166534); }
-.skill-badge--devops   { background: var(--color-badge-devops-bg,   #fef9c3); color: var(--color-badge-devops-text,   #854d0e); }
-.skill-badge--other    { background: var(--color-bg-secondary); color: var(--color-text-secondary); border: 1px solid var(--color-border); }
-.skill-badge--database { background: #dcfce7; color: #166534; }
+/* Frontend */
+.skill-badge--frontend {
+  background: rgba(59, 130, 246, 0.15);
+  color: #bfdbfe;
+  border-color: rgba(59, 130, 246, 0.35);
+}
+
+/* Database */
+.skill-badge--database {
+  background: rgba(16, 185, 129, 0.14);
+  color: #a7f3d0;
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+/* DevOps */
+.skill-badge--devops {
+  background: rgba(245, 158, 11, 0.14);
+  color: #fde68a;
+  border-color: rgba(245, 158, 11, 0.35);
+}
+
+/* Other */
+.skill-badge--other {
+  background: rgba(7, 53, 117, 0.12);
+  color: #e2e8f0;
+  border-color: rgba(148, 163, 184, 0.25);
+}
