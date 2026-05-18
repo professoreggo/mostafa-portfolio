@@ -1,15 +1,15 @@
 .achievement-card {
   display: flex;
   border-radius: 12px;
-  border: 1px solid #e5e7eb;
-  background: #ffffff;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-primary);
   overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
 
 .achievement-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-card);
 }
 
 /* Left — image */
@@ -33,12 +33,12 @@
   transform: scale(1.05);
 }
 
-/* Place badge — overlaid on image */
+/* Place badge */
 .achievement-card__place {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: #4f46e5;
+  background: var(--color-accent);
   color: #ffffff;
   border-radius: 8px;
   padding: 6px 10px;
@@ -61,6 +61,7 @@
 
 /* Right — content */
 .achievement-card__body {
+  font-size: 0.8rem;
   flex: 1;
   padding: 1.75rem;
   display: flex;
@@ -72,14 +73,7 @@
 .achievement-card__title {
   font-size: 1.05rem;
   font-weight: 600;
-  color: #111827;
-  line-height: 1.4;
-}
-
-.achievement-card__description{
-  font-size: 0.85rem;
-  font-weight: 100;
-  color: #111827;
+  color: var(--color-text-primary);
   line-height: 1.4;
 }
 
@@ -92,7 +86,7 @@
 
 .achievement-card__location {
   font-size: 0.85rem;
-  color: #6b7280;
+  color: var(--color-text-muted);
 }
 
 .achievement-card__year {
@@ -100,11 +94,10 @@
   font-weight: 500;
   padding: 0.25rem 0.75rem;
   border-radius: 99px;
-  background: #ede9fe;
-  color: #5b21b6;
+  background: var(--color-accent-light);
+  color: var(--color-accent);
 }
 
-/* Hide image on mobile */
 @media (max-width: 640px) {
   .achievement-card__image-wrapper { display: none; }
 }

@@ -1,6 +1,6 @@
 .experience {
   padding: 5rem 2rem;
-  background: #f9fafb; 
+  background: var(--color-bg-secondary);
 }
 
 .experience__container {
@@ -20,4 +20,3 @@
 @media (max-width: 768px) {
   .experience { padding: 3rem 1.25rem; }
 }
-

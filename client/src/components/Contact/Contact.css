@@ -1,6 +1,6 @@
 .contact {
   padding: 5rem 2rem;
-  background: #ffffff;
+  background: var(--color-bg-primary);
 }
 
 .contact__container {
@@ -13,7 +13,7 @@
 
 .contact__subtitle {
   font-size: 0.95rem;
-  color: #6b7280;
+  color: var(--color-text-muted);
   margin-top: -1rem;
 }
 
@@ -34,7 +34,7 @@
 
 .contact__info-label {
   font-size: 0.8rem;
-  color: #9ca3af;
+  color: var(--color-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: 500;
@@ -42,14 +42,15 @@
 
 .contact__email {
   font-size: 0.95rem;
-  color: #4f46e5;
+  color: var(--color-accent);
   font-weight: 500;
   text-decoration: none;
   word-break: break-all;
+  transition: opacity var(--transition-base);
 }
 
 .contact__email:hover {
-  text-decoration: underline;
+  opacity: 0.8;
 }
 
 /* Form */
@@ -68,25 +69,29 @@
 .form__label {
   font-size: 0.85rem;
   font-weight: 500;
-  color: #374151;
+  color: var(--color-text-secondary);
 }
 
 .form__input {
   padding: 0.7rem 1rem;
-  border: 1.5px solid #e5e7eb;
+  border: 1.5px solid var(--color-border);
   border-radius: 8px;
   font-size: 0.9rem;
-  color: #111827;
-  background: #f9fafb;
+  color: var(--color-text-primary);
+  background: var(--color-bg-secondary);  /* ← changed, now visually distinct */
   outline: none;
-  transition: border-color 0.2s, background 0.2s;
+  transition: border-color var(--transition-base), background var(--transition-base);
   font-family: inherit;
   width: 100%;
 }
 
 .form__input:focus {
-  border-color: #4f46e5;
-  background: #ffffff;
+  border-color: var(--color-accent);
+  background: var(--color-bg-secondary);  /* ← keep consistent on focus */
+}
+
+.form__input::placeholder {
+  color: var(--color-text-muted);
 }
 
 .form__textarea {

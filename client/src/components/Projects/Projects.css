@@ -1,6 +1,6 @@
 .projects {
   padding: 5rem 2rem;
-  background: #ffffff;
+  background: var(--color-bg-secondary);
 }
 
 .projects__container {
@@ -17,13 +17,11 @@
   gap: 1.25rem;
 }
 
-@media (max-width: 768px) {
-  .projects { padding: 3rem 1.25rem; }
-}
 @media (max-width: 900px) {
   .projects__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 600px) {
   .projects__grid { grid-template-columns: 1fr; }
+  .projects { padding: 3rem 1.25rem; }
 }

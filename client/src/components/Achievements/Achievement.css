@@ -1,6 +1,6 @@
 .achievements {
   padding: 5rem 2rem;
-  background: #ffffff;
+  background: var(--color-bg-primary);
 }
 
 .achievements__container {

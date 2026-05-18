@@ -16,7 +16,7 @@ function AchievementCard({ place, title, location, year, image, description }) {
 
       <div className="achievement-card__body">
         <h3 className="achievement-card__title">{title + " 🏆 "+place+" Place "}</h3>
-        <h2 className="achievement-card__description">{description}</h2>
+        <h3 className="achievement-card__description">{description}</h3>
         <div className="achievement-card__meta">
           <span className="achievement-card__location">
             📍 {location}

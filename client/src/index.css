@@ -1,7 +1,77 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; } /*reset*/
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Dark theme ── */
+:root {
+  --color-bg-primary:      #070729;
+  --color-bg-secondary: #11113a;
+  --color-bg-hero:         #13131f;
+
+  --color-text-primary:    #f9fafb;
+  --color-text-secondary:  #d1d5db;
+  --color-text-muted:      #9ca3af;
+
+  --color-accent:          #818cf8;
+  --color-accent-light:    #1e1b4b;
+  --color-accent-muted:    #6366f1;
+
+  --color-border:          #2d2d3d;
+
+  --shadow-card:           0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-nav:            0 2px 8px rgba(0, 0, 0, 0.2);
+
+  --color-badge-frontend-bg: #1e3a5f;
+  --color-badge-frontend-text: #93c5fd;
+  --color-badge-database-bg: #14532d;
+  --color-badge-database-text: #86efac;
+  --color-badge-devops-bg:   #422006;
+  --color-badge-devops-text: #fcd34d;
+
+
+  --shadow-card:           0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-nav:            0 2px 8px rgba(0, 0, 0, 0.06);
+
+  --transition-base:       0.2s ease;
+  --font-sans:             system-ui, -apple-system, sans-serif;
+
+}
+
+/* ── Light theme (default) ── */
+[data-theme="light"]{
+  --color-bg-primary:      #ffffff;
+  --color-bg-secondary:    #f9fafb;
+  --color-bg-hero:         #eaeaff;
+
+  --color-text-primary:    #111827;
+  --color-text-secondary:  #4b5563;
+  --color-text-muted:      #6b7280;
+
+  --color-accent:          #4f46e5;
+  --color-accent-light:    #ede9fe;
+  --color-accent-muted:    #a5b4fc;
+
+  --color-border:          #e5e7eb;
+
+  --shadow-card:           0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-nav:            0 2px 8px rgba(0, 0, 0, 0.06);
+
+  --transition-base:       0.2s ease;
+
+  --font-sans:             system-ui, -apple-system, sans-serif;
+}
+
+
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition: background var(--transition-base), color var(--transition-base);
+}
+
 html {
   scroll-behavior: smooth;
-}
-body {
-    font-family: sans-serif;
 }
