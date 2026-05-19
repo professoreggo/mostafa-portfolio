@@ -48,6 +48,17 @@ function Hero({ name, title, summary, skills }) {
         <h2 className="hero__title">{title}</h2>
         <p className="hero__summary">{summary}</p>
         <Typewriter words={skills} />
+        <div className="hero__actions">
+          <a
+            href="https://www.linkedin.com/in/mostafa-tarek-abdeljawad/"
+            className="btn btn--primary"
+          >
+            LinkedIn
+          </a>
+          <a href="#contact" className="btn btn--secondary">
+            Contact Me
+          </a>
+        </div>
       </div>
     </section>
   );

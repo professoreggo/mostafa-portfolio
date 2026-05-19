@@ -1,6 +1,6 @@
 .contact {
   padding: 5rem 2rem;
-  background: var(--color-bg-primary);
+  background: var(--color-bg-secondary);
 }
 
 .contact__container {
@@ -78,7 +78,7 @@
   border-radius: 8px;
   font-size: 0.9rem;
   color: var(--color-text-primary);
-  background: var(--color-bg-secondary);  /* ← changed, now visually distinct */
+  background: var(--color-bg-primary); 
   outline: none;
   transition: border-color var(--transition-base), background var(--transition-base);
   font-family: inherit;
@@ -87,7 +87,7 @@
 
 .form__input:focus {
   border-color: var(--color-accent);
-  background: var(--color-bg-secondary);  /* ← keep consistent on focus */
+  background: var(--color-bg-secondary);  
 }
 
 .form__input::placeholder {
@@ -112,6 +112,7 @@
 
 .form__btn {
   align-self: flex-start;
+  background: var(--color-bg-primary);
 }
 
 .form__btn:disabled {

@@ -14,6 +14,11 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.skill-badge:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
 /* Backend */
 .skill-badge--backend {
   background: rgba(255, 255, 255, 0.15);

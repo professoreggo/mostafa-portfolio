@@ -81,23 +81,47 @@
     {
       "id": 1,
       "title": "Engineer Onboarding System",
-      "description": "Full-stack onboarding platform built with React, Tailwind CSS, and Java Spring Boot. Dockerized PostgreSQL backend.",
+      "description": "Contributed to developing an Engineer Onboarding System that streamlines onboarding and progress tracking for new engineers. I worked across the stack using React on the frontend and Java Spring Boot with PostgreSQL in a Dockerized backend environment. The project was managed in an Agile (Scrum) workflow using GitLab for version control, reviews, and sprint tracking.",
       "tags": ["React", "Spring Boot", "PostgreSQL", "Docker"],
       "company": "Eventum Solutions"
     },
     {
       "id": 2,
       "title": "Fleet Management System",
-      "description": "Web application for fleet tracking using ASP.NET with SQL-powered forms and Power BI dashboards.",
-      "tags": ["ASP.NET", "SQL", "Power BI"],
+      "description": "Worked on a fleet management system across both frontend and backend by designing and managing the database, writing queries, and integrating them into ASP.NET web forms and Microsoft SQL Server",
+      "tags": ["ASP.NET", "SQL", "web-forms"],
       "company": "El Sewedy Electric"
     },
     {
       "id": 3,
       "title": "CMS with Microservices",
-      "description": "Content Management System backend using .NET Core with event logging and task automation microservices.",
+      "description": "Content Management System backend using ASP.NET Core with event logging and task automation microservices.",
       "tags": ["ASP.NET Core", "Microservices", "REST APIs"],
       "company": "Link-TSP"
+    }
+    ,
+    {
+      "id": 4,
+      "title": "Telecom Customer Management Dashboard",
+      "description": "A full-stack customer management dashboard built for a telecom company. The backend exposes a RESTful API with server-side pagination, contract expiry tracking, and analytics aggregations. The frontend is an Angular SPA featuring a Chart.js dashboard (pie and line charts) and a paginated customer table, themed to Orange Telecom's brand identity.",
+      "tags": ["ASP.NET","Angular","SQL", "REST" , "Chart.js"],
+      "company": "Personal Project"
+    }
+    ,
+    {
+      "id": 5,
+      "title": "Compiler-Parser",
+      "description": "A Python-based mini compiler with a graphical interface that processes mathematical expressions through all major compiler phases from lexical analysis to assembly code generation. Supporting both integer and float modes.",
+      "tags": ["Python" , "tkinter"],
+      "company": "University Final Project"
+    }
+        ,
+    {
+      "id": 5,
+      "title": "Autonomus Service Robot",
+      "description": "Autonomous service robot developed as a graduation project to assist students in the university admission building. Built with ROS 2 and Nav2 for autonomous navigation. It supports multi-modal interaction through NLP-based voice commands and a sign language recognition module using MediaPipe for keypoint extraction and an LSTM model for gesture classification with high accuracy. The project delivers a fully functional robotic assistant combining navigation and intelligent interaction.",
+      "tags": ["Python" , "React" , "ROS 2" , "Nav2" , "LSTM" , "ML"],
+      "company": "University Graduation Project"
     }
     
   ],

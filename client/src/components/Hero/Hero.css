@@ -113,7 +113,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    margin: 80px 1rem 0;
+    margin: 80px 1rem 80px;
     padding: 2rem 1.25rem;
   }
 }

@@ -84,7 +84,7 @@ html {
 @keyframes revealAnimation {
   from {
     opacity: 0;
-    transform: translateY(128px);
+    transform: translateY(256px);
     filter: blur(2px);
   }
 
