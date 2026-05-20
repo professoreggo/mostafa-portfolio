@@ -8,13 +8,14 @@ function Projects({projects}){
 
                 <h2 className='section__title'>Projects</h2>
                 <div className='projects__grid'>
-                    {projects.map(project=>(
+                    {projects.map((project,index)=>(
                         <ProjectCard
                             key={project.key}
                             title={project.title}
                             description={project.description}
                             tags={project.tags}
                             company={project.company}
+                            index={index}
                         />
                     ))}
                 </div>

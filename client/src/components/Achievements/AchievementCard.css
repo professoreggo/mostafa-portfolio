@@ -1,31 +1,78 @@
 .achievement-card {
+  position: relative;
+
   display: flex;
+
   border-radius: 12px;
   border: 1px solid var(--color-border);
+
   background: var(--color-bg-primary);
+
   overflow: hidden;
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
 }
 
 .achievement-card:hover {
   transform: translateY(-2px);
+
   box-shadow: var(--shadow-card);
 }
 
+/* ───────────────────────── */
+/* Spotlight Glow */
+/* ───────────────────────── */
+
+.achievement-card::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background: radial-gradient(
+    900px circle at var(--mouse-x) var(--mouse-y),
+    rgba(79, 70, 229, 0.20),
+    transparent 55%
+  );
+
+  opacity: 0;
+
+  transition: opacity 0.5s ease;
+
+  filter: blur(40px);
+}
+
+.achievement-card:hover::after {
+  opacity: 1;
+}
+
+/* ───────────────────────── */
 /* Left — image */
+/* ───────────────────────── */
+
 .achievement-card__image-wrapper {
   width: 200px;
+
   flex-shrink: 0;
+
   position: relative;
+
   overflow: hidden;
 }
 
 .achievement-card__image {
   position: absolute;
   inset: 0;
+
   width: 100%;
   height: 100%;
+
   object-fit: cover;
+
   transition: transform 0.4s ease;
 }
 
@@ -33,71 +80,117 @@
   transform: scale(1.05);
 }
 
+/* ───────────────────────── */
 /* Place badge */
+/* ───────────────────────── */
+
 .achievement-card__place {
   position: absolute;
+
   top: 12px;
   left: 12px;
+
   background: var(--color-accent);
+
   color: #ffffff;
+
   border-radius: 8px;
+
   padding: 6px 10px;
+
   text-align: center;
+
   line-height: 1.2;
 }
 
 .achievement-card__place span {
   display: block;
+
   font-size: 1.2rem;
   font-weight: 700;
 }
 
 .achievement-card__place p {
   font-size: 0.65rem;
+
   text-transform: uppercase;
+
   letter-spacing: 0.5px;
+
   opacity: 0.85;
 }
 
+/* ───────────────────────── */
 /* Right — content */
+/* ───────────────────────── */
+
 .achievement-card__body {
-  font-size: 0.8rem;
+  position: relative;
+  z-index: 1;
+
   flex: 1;
+
   padding: 1.75rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   gap: 0.75rem;
 }
 
 .achievement-card__title {
   font-size: 1.05rem;
   font-weight: 600;
+
   color: var(--color-text-primary);
+
   line-height: 1.4;
+}
+
+.achievement-card__description {
+  font-size: 0.9rem;
+
+  font-weight: 400;
+
+  line-height: 1.6;
+
+  color: var(--color-text-secondary);
 }
 
 .achievement-card__meta {
   display: flex;
   align-items: center;
   gap: 1rem;
+
   flex-wrap: wrap;
 }
 
 .achievement-card__location {
   font-size: 0.85rem;
+
   color: var(--color-text-muted);
 }
 
 .achievement-card__year {
   font-size: 0.8rem;
   font-weight: 500;
+
   padding: 0.25rem 0.75rem;
+
   border-radius: 99px;
+
   background: var(--color-accent-light);
+
   color: var(--color-accent);
 }
 
+/* ───────────────────────── */
+/* Mobile */
+/* ───────────────────────── */
+
 @media (max-width: 640px) {
-  .achievement-card__image-wrapper { display: none; }
+  .achievement-card__image-wrapper {
+    display: none;
+  }
 }

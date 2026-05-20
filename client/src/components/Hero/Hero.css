@@ -25,7 +25,7 @@
 }
 
 
-.hero::before {
+.hero::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -42,7 +42,7 @@
   filter: blur(40px);
 }
 
-.hero:hover::before {
+.hero:hover::after {
   opacity: 1;
 }
 

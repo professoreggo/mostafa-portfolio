@@ -85,7 +85,7 @@ html {
   from {
     opacity: 0;
     transform: translateY(256px);
-    filter: blur(2px);
+    filter: blur(6px);
   }
 
   to {
