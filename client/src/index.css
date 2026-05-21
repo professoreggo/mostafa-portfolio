@@ -63,7 +63,62 @@ body {
   font-family: var(--font-sans);
   background: var(--color-bg-primary);
   color: var(--color-text-primary);
-  transition: background var(--transition-base), color var(--transition-base);
+
+  transition: var(--transition-base), color var(--transition-base);
+
+  position: relative;
+  overflow-x: hidden;
+}
+body::before {
+  content: "";
+
+  position: fixed;
+  inset: 0;
+
+  z-index: -1;
+  pointer-events: none;
+
+  background-image:
+    linear-gradient(
+      rgba(129, 140, 248, 0.08) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(129, 140, 248, 0.08) 1px,
+      transparent 1px
+    );
+
+  background-size: 40px 40px;
+
+  animation: movingGrid 2s linear infinite;
+}
+
+body::after {
+  content: "";
+
+  position: fixed;
+  inset: 0;
+
+  z-index: -1;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(99, 102, 241, 0.15),
+      transparent 90%
+    );
+}
+
+@keyframes movingGrid {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(40px, 40px);
+  }
 }
 
 html {
@@ -85,7 +140,7 @@ html {
   from {
     opacity: 0;
     transform: translateY(256px);
-    filter: blur(6px);
+    filter: blur(16px);
   }
 
   to {
